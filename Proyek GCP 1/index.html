@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+
+    <style>
+        :root{
+            --color-black : #252525;
+            --color-white : #ffffff;
+            --color-gray  : #595959;
+
+            --font-1: 'PT Serif', serif;
+            --font-2: 'Raleway', sans-serif;
+            --font-3: 'Fjord One', serif;
+
+            --lr-padding: 30px;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: circle;
+            box-sizing: border-box;
+            text-decoration: none;
+
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .main-section{
+            width: 100vw;
+            height: 100%;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch;
+            gap: 2rem;
+
+            padding: 0px var(--lr-padding);
+            margin-top: 30px;
+        }
+
+        .profile-img img{
+            border: 2px solid var(--color-black);
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+
+        .profile-data{
+            min-width: 100px;
+            width: 100%;
+            max-width: 700px;
+        }
+
+        .profile-data table{
+            height: 100%;
+            width: 100%;
+            border-collapse: collapse;
+
+            align-items: start;
+            justify-content: space-between;
+        }
+
+        .profile-data table tr{
+            border-bottom: 3px solid var(--color-black);
+        }
+
+        .profile-data table tr td:nth-child(1){
+            width: 40%;
+            font-family: var(--font-1);
+            font-size: clamp(0.8rem, 1vw + 0.1rem, 2rem);
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+
+        .profile-data table tr td:nth-child(2){
+            font-family: var(--font-3);
+            font-size: clamp(0.8rem, 1vw + 0.1rem, 1.25rem);
+        }
+
+        a{
+            color: var(--color-black);
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+        .badges-section{
+            width: 100vw;
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch;
+            gap: 2rem;
+
+            padding: 0px var(--lr-padding);
+            margin-top: 60px;
+        }
+
+        .badge-display{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            width: 100%;
+        }
+
+        .badge-display div{
+            margin: 10px 20px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-section">
+        <div class="profile-img">
+            <img src="https://storage.googleapis.com/myprofile-project-bucket/profile.jpg" alt="" width="250px">
+        </div>
+        <div class="profile-data">
+            <table class="bio-table">
+                <tr>
+                    <td>Nama</td>
+                    <td>Kevin Pratama Setiawan</td>
+                </tr>
+                <tr>
+                    <td>Pendidikan</td>
+                    <td>S1 Teknik Informatika, Institut Teknologi Sumatera</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>c119d4ky0131@bangkit.academy</td>
+                </tr>
+                <tr>
+                    <td>Deskripsi</td>
+                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga nobis explicabo qui et vitae temporibus quia est numquam accusamus sit, ad impedit in blanditiis eius amet vero corrupti! Numquam, quisquam odit nostrum minus maxime necessitatibus blanditiis non quod dolore quis, magnam dolorem eaque molestiae libero aut neque adipisci ad fugiat.</td>
+                </tr>
+                <tr>
+                    <td>Media Sosial</td>
+                    <td>
+                        <ol>
+                            <li><a href="https://www.instagram.com/kev1n_pratama/">Instagram</a></li>
+                            <li><a href="https://github.com/KevinPratamaSetiawan">Github</a></li>
+                            <li><a href="https://www.linkedin.com/in/kevin-pratama-setiawan-159060258/">Linkedin</a></li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="badges-section">
+        <h2>My Google Cloud Badges</h2>
+        <div class="badge-display">
+            <div>
+                <div class="badge-img">
+                    <img src="https://storage.googleapis.com/myprofile-project-bucket/create-and-manage-cloud-resources-badge.png" alt="" width="300px">
+                </div>
+                <p>Implement Load Balancing on Compute Engine</p>
+            </div>
+            <div>
+                <div class="badge-img">
+                    <img src="https://storage.googleapis.com/myprofile-project-bucket/set-up-an-app-dev-environment-on-google-cloud-badge.png" alt="" width="300px">
+                </div>
+                <p>Set Up an App Dev Environment on Google Cloud</p>
+            </div>
+            <div>
+                <div class="badge-img">
+                    <img src="https://storage.googleapis.com/myprofile-project-bucket/build-a-secure-google-cloud-network-badge.png" alt="" width="300px">
+                </div>
+                <p>Build a Secure Google Cloud Network</p>
+            </div>
+            <div>
+                <div class="badge-img">
+                    <img src="https://storage.googleapis.com/myprofile-project-bucket/prepare-data-for-ml-apis-on-google-cloud-badge.png" alt="" width="300px">
+                </div>
+                <p>Prepare Data for ML APIs on Google Cloud</p>
+            </div>
+            <div>
+                <div class="badge-img">
+                    <img src="https://storage.googleapis.com/myprofile-project-bucket/develop-your-google-cloud-network-badge.png" alt="" width="300px">
+                </div>
+                <p>Develop your Google Cloud Network</p>
+            </div>
+            <div>
+                <div class="badge-img">
+                    <img src="https://storage.googleapis.com/myprofile-project-bucket/build-infrastructure-with-terraform-on-google-cloud-badge.png" alt="" width="300px">
+                </div>
+                <p>Build Infrastructure with Terraform on Google Cloud</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

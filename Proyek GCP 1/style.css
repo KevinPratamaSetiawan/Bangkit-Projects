@@ -1,0 +1,114 @@
+:root{
+    --color-black : #252525;
+    --color-white : #ffffff;
+    --color-gray  : #595959;
+
+    --font-1: 'PT Serif', serif;
+    --font-2: 'Raleway', sans-serif;
+    --font-3: 'Fjord One', serif;
+
+    --lr-padding: 30px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: circle;
+    box-sizing: border-box;
+    text-decoration: none;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.main-section{
+    width: 100vw;
+    height: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+
+    padding: 0px var(--lr-padding);
+    margin-top: 30px;
+}
+
+.profile-img img{
+    border: 2px solid var(--color-black);
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.profile-data{
+    min-width: 100px;
+    width: 100%;
+    max-width: 700px;
+}
+
+.profile-data table{
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+
+    align-items: start;
+    justify-content: space-between;
+}
+
+.profile-data table tr{
+    border-bottom: 3px solid var(--color-black);
+}
+
+.profile-data table tr td:nth-child(1){
+    width: 40%;
+    font-family: var(--font-1);
+    font-size: clamp(0.8rem, 1vw + 0.1rem, 2rem);
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.profile-data table tr td:nth-child(2){
+    font-family: var(--font-3);
+    font-size: clamp(0.8rem, 1vw + 0.1rem, 1.25rem);
+}
+
+a{
+    color: var(--color-black);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.badges-section{
+    width: 100vw;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+
+    padding: 0px var(--lr-padding);
+    margin-top: 60px;
+}
+
+.badge-display{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+}
+
+.badge-display div{
+    margin: 10px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
